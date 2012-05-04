@@ -27,6 +27,12 @@ set incsearch		" Set Current Highlight as you type
 set scrolloff=20	" Don't show the search as the first line
 set ruler			" Show the line and column number
 set showcmd			" Show a line in the end of the terminal 
+set so=10			" Set the cursor to not go on top of the screen
+set cmdheight=2		" Set the command bar height
+set wildmenu		" Set the wild menu
+set mat=1			" Set second to blink
+set laststatus=2	" Show the last status/command
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,3 +62,18 @@ filetype plugin indent on
 " if has( 'autocmd' )
 "		autocmd filetype python set expandtab
 " endif
+"
+
+
+function! CurDir()
+	let curdir = substitute(getcwd(), "/Users/amir/", "~/", "g")
+	return curdir
+endfunction
+
+function! HasPaste()
+	if &paste
+		return 'Paste Mode '
+	else
+		return ''
+	endif
+endfunction
