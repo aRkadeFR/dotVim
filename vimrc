@@ -33,6 +33,7 @@ set wildmenu		" Set the wild menu
 set mat=1			" Set second to blink
 set laststatus=2	" Show the last status/command
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+set foldmarker={,}
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -51,7 +52,7 @@ set nowrap				" Don't wrap line but for tex ?
 set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set smarttab			" Inserting tabs according to shiftwidth
-set pastetoggle=<F10>	" For the copy
+set pastetoggle=<F9>	" For the copy
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
