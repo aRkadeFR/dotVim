@@ -34,6 +34,7 @@ set mat=1			" Set second to blink
 set laststatus=2	" Show the last status/command
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set foldmarker={,}
+set foldmethod=marker
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,3 +79,9 @@ function! HasPaste()
 		return ''
 	endif
 endfunction
+
+"Options for the NERDTree
+let NERDTreeChristmas=1
+let NERDTreeChDirMode=1
+let NERDTreeShowHidden=1
+let NERDTreeDirArrows=0
