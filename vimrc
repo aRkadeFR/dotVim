@@ -45,7 +45,7 @@ set hidden 			" Very important !
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set autoindent 			" Possible : smartindent, autoindent, cindent
-set noexpandtab 		" Mettre des tabs et aucuns espaces
+set expandtab 		" Mettre des tabs et aucuns espaces
 set tabstop=4 			" Mettre une tabulation 
 set shiftwidth=4 		" Nombre d'espaces pour une indentation
 set shiftround			" Use multiple shift on < | > command
