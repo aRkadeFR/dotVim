@@ -59,6 +59,8 @@ set directory=~/.vim/backup
 
 " Specific command for filetype
 filetype plugin indent on
+" associate *.less with css filetype
+au BufRead,BufNewFile *.less setfiletype css
 " To set some file type specific settings, you can now use the following:
 
 " if has( 'autocmd' )
