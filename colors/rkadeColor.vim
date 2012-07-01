@@ -28,5 +28,5 @@ hi Folded			ctermfg=10		ctermbg=0		cterm=none
 hi NonText			ctermfg=252		ctermbg=233		cterm=none
 hi Directory		ctermfg=14		ctermbg=0		cterm=none
 hi Title			ctermfg=105		ctermbg=0		cterm=none
-hi Type				ctermfg=252		ctermbg=233		cterm=none
+hi Type				ctermfg=199		ctermbg=0		cterm=none
 hi Normal			ctermfg=255		ctermbg=0		cterm=none

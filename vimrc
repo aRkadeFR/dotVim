@@ -56,6 +56,7 @@ set smarttab			" Inserting tabs according to shiftwidth
 set pastetoggle=<F9>	" For the copy
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+set clipboard=unnamed  " Set the copy and paste in the clipboard
 
 " Specific command for filetype
 filetype plugin indent on
