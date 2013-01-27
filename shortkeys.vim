@@ -11,6 +11,11 @@ nmap <silent> <C-l> :wincmd l<CR>
 
 " Save with double space
 nnoremap <space><space> :wa<CR>
+nnoremap n nzz
+nnoremap } }zz
+
+" Switch between headers and sources
+nnoremap <C-i> :A<CR>
 
 " Shortcut for the :
 nnoremap ; :
