@@ -14,6 +14,10 @@ nnoremap <space><space> :wa<CR>
 nnoremap n nzz
 nnoremap } }zz
 
+" Comment and Uncomment
+noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
+noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
+
 " Switch between headers and sources
 nnoremap <C-i> :A<CR>
 
