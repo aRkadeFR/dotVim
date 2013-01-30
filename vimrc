@@ -6,6 +6,7 @@ call pathogen#helptags()
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/a.vim'
 
+
 " Performance
 set nobackup		"Git for tracking version and not vim !
 set noswapfile		"Git for tracking version and not vim !
@@ -116,6 +117,12 @@ function! HasPaste()
 		return ''
 	endif
 endfunction
+
+function SetupSyntaxQt()
+    execute 'source ' . $HOME . '/.vim/qt.vim'
+endfunction
+
+au Syntax * call SetupSyntaxQt()
 
 "Options for the NERDTree
 let NERDTreeChristmas=1
