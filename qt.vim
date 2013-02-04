@@ -26,6 +26,7 @@ syntax keyword Type QAbstractFileEngineHandler
 syntax keyword Type QFontInfo
 syntax keyword Type QNetworkProxy
 syntax keyword Type Query
+syntax keyword Type QJson
 syntax keyword Type QStyleOptionToolBar
 syntax keyword Type QAbstractFileEngineIterator
 syntax keyword Type QFontMetrics

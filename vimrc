@@ -5,7 +5,7 @@ call pathogen#helptags()
 " Lecture de tous les raccourcis claviers
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/a.vim'
-
+execute 'source ' . $HOME . '/.vim/functions.vim'
 
 " Performance
 set nobackup		"Git for tracking version and not vim !
@@ -81,46 +81,6 @@ au FileType c,cpp,java let b:comment_leader = '// '
 au FileType sh,make let b:comment_leader = '# '
 au FileType tex let b:comment_leader = '% '
 
-"Function for commenting a block of Visually selected text
-function Comment(fl, ll)
-  let i=a:fl
-  let comment="//"
-  while i<=a:ll
-    let cl=getline(i)
-    let cl2=comment.cl
-    call setline(i, cl2)
-    let i=i+1
-  endwhile
-endfunction
-
-"Function for Un-Commenting a block of Visually selected text
-function UnComment(fl, ll)
-  let i=a:fl
-  let comment="//"
-  while i<=a:ll
-    let cl=getline(i)
-    let cl2=substitute(cl, "//", "", "")
-    call setline(i, cl2)
-    let i=i+1
-  endwhile
-endfunction
-
-function! CurDir()
-	let curdir = substitute(getcwd(), "/Users/amir/", "~/", "g")
-	return curdir
-endfunction
-
-function! HasPaste()
-	if &paste
-		return 'Paste Mode '
-	else
-		return ''
-	endif
-endfunction
-
-function SetupSyntaxQt()
-    execute 'source ' . $HOME . '/.vim/qt.vim'
-endfunction
 
 au Syntax * call SetupSyntaxQt()
 
