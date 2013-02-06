@@ -74,6 +74,9 @@ au BufRead,BufNewFile *.less setfiletype css
 "		autocmd filetype python set expandtab
 " endif
 "
+autocmd BufNewFile,BufRead *.tex set tw=80
+autocmd BufNewFile,BufRead *.tex set textwidth=80
+autocmd BufNewFile,BufRead *.tex set wrapmargin
 
 au FileType haskell,vhdl,ada let b:comment_leader = '-- '
 au FileType vim let b:comment_leader = '" '

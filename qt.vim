@@ -1,3 +1,10 @@
+syntax keyword Keyword signals
+syntax keyword Keyword slots
+syntax keyword Keyword Q_OBJECT
+syntax keyword Keyword emit
+syntax keyword Keyword SIGNAL
+syntax keyword Keyword SLOT
+
 syntax keyword Type QAbstractAnimation
 syntax keyword Type QFont
 syntax keyword Type QNetworkCookie

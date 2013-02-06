@@ -26,8 +26,11 @@ nnoremap <A-6> 6gt
 nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
-noremap <F7> :tabprevious<CR>
-noremap <F8> :tabnext<CR>
+nnoremap <F10> :bprevious<CR>
+nnoremap <F11> :bnext<CR>
+
+noremap <F7> :BufSurfBack<CR>
+noremap <F8> :BufSurfForward<CR>
 
 " Switch between headers and sources
 nnoremap <C-i> :A<CR>
