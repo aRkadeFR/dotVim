@@ -1,6 +1,7 @@
 " Activation/Desactivation de la fenetre
 " NERDTreeToggle d'exploration de fichiers
 map <F9> <Esc>:NERDTreeToggle<CR>
+map <F8> :make<CR>
 
 
 " Go to windows
@@ -26,11 +27,9 @@ nnoremap <A-6> 6gt
 nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
-nnoremap <F10> :bprevious<CR>
-nnoremap <F11> :bnext<CR>
+nnoremap <F10> :BufSurfBack<CR>
+nnoremap <F11> :BufSurfForward<CR>
 
-noremap <F7> :BufSurfBack<CR>
-noremap <F8> :BufSurfForward<CR>
 
 " Switch between headers and sources
 nnoremap <C-i> :A<CR>

@@ -46,5 +46,7 @@ snippet fori
 	{
 		${4:/* code */}
 	}
-snippet Inc
-	#include "${1:`Filename("$1.h")`}"${2}
+snippet Inc Cpp file with .hpp file
+	#include "${1:`Filename("$1")`}.hpp"${2}
+snippet Inc Cxx file with .hxx file
+	#include "${1:`Filename("$1")`}.hxx"${2}
