@@ -4,6 +4,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim
-[submodule "/home/fgrignon/.vim/bundle/bufsurf"]
-	path = /home/fgrignon/.vim/bundle/bufsurf
+[submodule "bundle/bufsurf"]
+	path = bundle/bufsurf
 	url = git://github.com/ton/vim-bufsurf.git

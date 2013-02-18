@@ -43,8 +43,8 @@ endfunction
 
 " create headers/sources for a class
 function! CreateClass(nameClass)
-    edit "./headers/$nameClass.hpp"
+    execute "edit headers/" . a:nameClass . ".hpp"
     write
-    edit "./sources/$nameClass.cpp"
-    wall
+    execute "edit sources/" . a:nameClass . ".cpp"
+    write
 endfunction
