@@ -22,7 +22,8 @@ set splitright
 " Display :
 set number
 syntax on
-colorscheme rkadeColor
+colorscheme wombat
+set background=dark
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
@@ -92,3 +93,4 @@ let NERDTreeChristmas=1
 let NERDTreeChDirMode=1
 let NERDTreeShowHidden=1
 let NERDTreeDirArrows=0
+let NERDTreeWinSize=25
