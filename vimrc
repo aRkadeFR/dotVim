@@ -19,13 +19,13 @@ set visualbell " Don't do beep
 " set noerrorbells " Don't beep
 set splitright
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Display :
-"""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 syntax on
 colorscheme rkadeColor
 
+colorscheme wombat
+set background=dark
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
@@ -44,7 +44,6 @@ set visualbell t_vb=    "Don't flashing the screen on error
 set showmode            "Show the current mode for insert
 set splitbelow
 set splitright
-set background=dark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,8 +62,7 @@ set nowrap				" Don't wrap line but for tex ?
 set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set smarttab			" Inserting tabs according to shiftwidth
-set nopaste
-set pastetoggle=<F9>
+set pastetoggle=<F9>	" For the copy
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set clipboard=unnamed  " Set the copy and paste in the clipboard
@@ -97,3 +95,4 @@ let NERDTreeChristmas=1
 let NERDTreeChDirMode=1
 let NERDTreeShowHidden=1
 let NERDTreeDirArrows=0
+let NERDTreeWinSize=25
