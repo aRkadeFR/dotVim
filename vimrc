@@ -19,9 +19,7 @@ set visualbell " Don't do beep
 " set noerrorbells " Don't beep
 set splitright
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Display :
-"""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 syntax on
 colorscheme wombat
@@ -44,7 +42,6 @@ set visualbell t_vb=    "Don't flashing the screen on error
 set showmode            "Show the current mode for insert
 set splitbelow
 set splitright
-set background=dark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,8 +60,7 @@ set nowrap				" Don't wrap line but for tex ?
 set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set smarttab			" Inserting tabs according to shiftwidth
-set nopaste
-set pastetoggle=<F9>
+set pastetoggle=<F9>	" For the copy
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set clipboard=unnamed  " Set the copy and paste in the clipboard
