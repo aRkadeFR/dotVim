@@ -23,8 +23,6 @@ set splitright
 set number
 syntax on
 colorscheme rkadeColor
-
-colorscheme wombat
 set background=dark
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
