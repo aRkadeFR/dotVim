@@ -25,10 +25,7 @@ set splitright
 set number
 syntax on
 colorscheme rkadeColor
-<<<<<<< HEAD
-=======
 set background=dark
->>>>>>> f3bf0e69c46d2dac0540a91a3c3ccf27d56d6f69
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
