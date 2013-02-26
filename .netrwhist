@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/grignonf/Projects/odalisk/src/Odalisk/Resources/views'
-let g:netrw_dirhist_2='/home/grignonf/tmp/htop-1.0.1'
-let g:netrw_dirhist_3='/home/grignonf/.config/autostart'
-let g:netrw_dirhist_4='/home/grignonf/Cours/ComputerScience/ComputerGraphics/Lecture'
-let g:netrw_dirhist_5='/home/grignonf/Cours/ComputerScience/OperatingSystems/projectSynchronization'
-let g:netrw_dirhist_6='/home/grignonf/Cours/ComputerScience/AdvancedProgramming/Lecture'
-let g:netrw_dirhist_7='/home/fgrignon/Documents/ORMComparaison'
-let g:netrw_dirhist_8='/home/fgrignon/odb-2.1.1-x86_64-linux-gnu/x86_64-linux-gnu/include/odb/boost'
+let g:netrw_dirhist_cnt =0

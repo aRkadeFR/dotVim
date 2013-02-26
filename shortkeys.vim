@@ -3,6 +3,7 @@
 map <F9> <Esc>:NERDTreeToggle<CR>
 map <F8> :make<CR>
 map <F7> :make clean<CR>
+map <F5> :make check<CR>
 
 " Go to windows
 nmap <silent> <C-k> :wincmd k<CR>

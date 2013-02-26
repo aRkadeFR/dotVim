@@ -96,4 +96,5 @@ au Syntax * call SetupSyntaxQt()
 let NERDTreeChristmas=1
 let NERDTreeChDirMode=1
 let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1
 let NERDTreeDirArrows=0
