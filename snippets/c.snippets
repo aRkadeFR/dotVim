@@ -20,7 +20,7 @@ snippet Inc C file, with .h header
 # #ifndef ... #define ... #endif
 snippet Def
 	#ifndef $1
-	#define ${1:SYMBOL} ${2:value}
+	#define ${1:`Filename("$1")`} ${2:value}
 	#endif${3}
 snippet def
 	#define
