@@ -36,4 +36,4 @@ nnoremap <F11> :BufSurfForward<CR>
 nnoremap <C-i> :A<CR>
 
 " Shortcut for the :
-nnoremap ; :
+"nnoremap ; :
