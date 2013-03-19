@@ -24,7 +24,7 @@ set splitright
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 syntax on
-colorscheme rkadeColor
+colorscheme rkadeFR
 set background=dark
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
@@ -59,12 +59,10 @@ set expandtab 		" Mettre des tabs et aucuns espaces
 set tabstop=4 			" Mettre une tabulation 
 set shiftwidth=4 		" Nombre d'espaces pour une indentation
 set shiftround			" Use multiple shift on < | > command
-set nowrap				" Don't wrap line but for tex ?
 set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set smarttab			" Inserting tabs according to shiftwidth
 set nopaste
-set pastetoggle=<F9>
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set clipboard=unnamed  " Set the copy and paste in the clipboard

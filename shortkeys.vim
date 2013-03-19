@@ -37,3 +37,4 @@ nnoremap <C-i> :A<CR>
 
 " Shortcut for the :
 "nnoremap ; :
+set pastetoggle=<F9>
