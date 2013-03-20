@@ -36,3 +36,4 @@ hi Search           ctermfg=232     ctermbg=142
 hi Search           ctermfg=232     ctermbg=142
 hi VertSplit        ctermfg=0       ctermbg=15
 hi MatchParen       ctermbg=143     ctermfg=15
+hi Underlined       term=underline  ctermfg=none
