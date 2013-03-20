@@ -6,6 +6,7 @@ call pathogen#helptags()
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/a.vim'
 execute 'source ' . $HOME . '/.vim/functions.vim'
+execute 'source ' . $HOME . '/.vim/hicursorwords.vim'
 
 " Performance
 set nobackup		"Git for tracking version and not vim !
