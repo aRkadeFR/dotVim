@@ -74,10 +74,6 @@ filetype plugin indent on
 au BufRead,BufNewFile *.less setfiletype css
 " To set some file type specific settings, you can now use the following:
 
-" if has( 'autocmd' )
-"		autocmd filetype python set expandtab
-" endif
-"
 autocmd BufNewFile,BufRead *.tex set tw=80
 autocmd BufNewFile,BufRead *.tex set textwidth=80
 autocmd BufNewFile,BufRead *.tex set wrapmargin
@@ -97,3 +93,4 @@ let NERDTreeChDirMode=1
 let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let NERDTreeDirArrows=0
+let NERDTreeWinSize=20
