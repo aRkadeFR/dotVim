@@ -41,11 +41,13 @@ set laststatus=2	" Show the last status/command
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set foldmarker={,}
 set foldmethod=marker
+set foldlevelstart=4
 set visualbell t_vb=    "Don't flashing the screen on error
 set showmode            "Show the current mode for insert
 set splitbelow
 set splitright
 set background=dark
+"set mouse=a         " Enable the mouse
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
