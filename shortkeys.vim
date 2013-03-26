@@ -1,7 +1,7 @@
 " Activation/Desactivation de la fenetre
 " NERDTreeToggle d'exploration de fichiers
 map <F9> <Esc>:NERDTreeToggle<CR>
-map <F8> :make<CR>
+map <F8> :make!<CR>
 map <F7> :make clean<CR>
 map <F5> :make check<CR>
 
