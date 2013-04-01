@@ -16,3 +16,17 @@ snippet Inc Cxx file with .hxx file
 	#include "${1:`Filename("$1")`}.hxx"${2}
 snippet re
 	return ${1};${2}
+snippet tpl_cl
+	#ifndef `toupper('$1')`_H
+	#define `toupper('$1')`_H
+
+	class ${1:`Filename('$1', 'name')`} {
+		private:
+			${3:/* data */}
+
+		public:
+			$1 (${2:arguments});
+			virtual ~$1 ();
+	};
+
+	#endif
