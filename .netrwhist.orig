@@ -1,13 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/fgrignon/Projects/TcpDumpParse/data'
 let g:netrw_dirhist_2='/usr/include/linux'
 let g:netrw_dirhist_3='/home/fgrignon/Projects/TcpDumpParse/data'
 let g:netrw_dirhist_4='/home/fgrignon/.bash'
 let g:netrw_dirhist_5='/home/fgrignon/.vim'
-<<<<<<< HEAD
-let g:netrw_dirhist_6='/home/fgrignon/Downloads/curl'
-let g:netrw_dirhist_7='/etc/mail'
-=======
 let g:netrw_dirhist_6='/home/fgrignon/Projects/Logger/example/Logog/build'
->>>>>>> b8fc98e5c9e31e0f579930a7e68ee31a1e9ccca2
+<<<<<<< HEAD
+let g:netrw_dirhist_7='/home/grignonf/.vim/autoload'
+=======
+>>>>>>> 765e1bc0611a70f4965d339efe4c862e4532c6aa
