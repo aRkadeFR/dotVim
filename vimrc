@@ -97,6 +97,9 @@ set tags+=~/.vim/tags/qt4
 " build tags of your own project with Ctrl-F12
 " map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
+"Options for snipmate
+let g:snippets_dir="~/.vim/snippets"
+
 "Options for omnicompletion
 au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 "
