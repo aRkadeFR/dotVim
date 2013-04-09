@@ -28,8 +28,10 @@ snippet cl
 			${3:/* data */}
 
 		public:
-			explicit $1 (${2});
-			virtual ~$1 ();
+			explicit $1();
+			explicit $1(const $1& `tolower("$1")`);
+			operator=(const $1& `tolower("$1")`);
+			virtual ~$1();
 	};
 snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++})
