@@ -50,6 +50,8 @@ snippet qdebu
 	qDebug() << "[Debug] $1 (" << ${1:my_variable} << ")";${2}
 snippet qde
 	qDebug() << "[Debug] $1 (" << ${1:my_variable} << ")";${2}
+snippet debu
+	cerr << "[Debug] watch : $1(" << ${1:name_variable} << ")" << endl;
 snippet Inc Cpp file with .hpp file
 	#include "${1:`Filename("$1")`}.hpp"${2}
 snippet Inc Cxx file with .hxx file
@@ -63,3 +65,8 @@ snippet tpl_cl
 	cl${2}
 
 	#endif
+snippet getter
+	const ${2:type}& ${1:name}() const;
+snippet setter
+	void ${1:name}(const ${2:type}& arg);
+
