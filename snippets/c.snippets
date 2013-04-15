@@ -43,6 +43,15 @@ snippet once
 
 	#endif /* end of include guard: $1 */
 # If Condition
+snippet ife
+	if (${1:/* condition */})
+	{
+		${2:/* code */}
+	}
+	else
+	{
+		${1}
+	}
 snippet if
 	if (${1:/* condition */})
 	{
