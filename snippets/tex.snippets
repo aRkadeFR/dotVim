@@ -103,6 +103,15 @@ snippet subp
 	% subparagraph $2 (end)
 snippet itd
 	\item[${1:description}] ${2:item}
+snippet fig
+	\begin{figure}[!h]
+	\begin{center}
+
+	\includegraphics[scale=0.8]{\DIRPICTURES ${1:name_picture}}
+	\caption{${2:Diagram}}
+
+	\end{center}
+	\end{figure}
 snippet figure
 	${1:Figure}~\ref{${2:fig:}}${3}
 snippet table
@@ -113,3 +122,5 @@ snippet section
 	${1:Section}~\ref{${2:sec:}}${3}
 snippet page
 	${1:page}~\pageref{${2}}${3}
+snippet emp
+	\emph{${1}}${2}
