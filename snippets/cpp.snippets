@@ -24,14 +24,13 @@ snippet ns
 snippet cl
 	class ${1:`Filename('$1', 'name')`}
 	{
-		private:
-			${3:/* data */}
-
 		public:
 			explicit $1();
 			explicit $1(const $1& `tolower("$1")`);
 			operator=(const $1& `tolower("$1")`);
 			virtual ~$1();
+		private:
+			${3:/* data */}
 	};
 snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++})
@@ -60,7 +59,7 @@ snippet re
 	return ${1};${2}
 snippet tpl_cl
 	#ifndef $1
-	#define ${1:`toupper(Filename("$1_H"))`}
+	#define ${1:`toupper(Filename("$1_HPP"))`}
 
 	cl${2}
 
@@ -69,4 +68,6 @@ snippet getter
 	const ${2:type}& ${1:name}() const;
 snippet setter
 	void ${1:name}(const ${2:type}& arg);
-
+# This is kind of convenient
+snippet .
+	::
