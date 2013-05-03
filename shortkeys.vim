@@ -31,6 +31,7 @@ nnoremap <A-9> 9gt
 " F9 to F12 => show open windows
 noremap <silent> <F9> <Esc>:NERDTreeToggle<CR>
 noremap <silent> <F10> :BufExplorerHorizontalSplit<CR>
+noremap <silent> <F11> :TlistToggle<CR>
 "nnoremap <F10> :BufSurfBack<CR>
 "nnoremap <F11> :BufSurfForward<CR>
 
