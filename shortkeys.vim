@@ -4,6 +4,8 @@ map <F8> :make!<CR>
 map <F7> :make clean<CR>
 map <F5> :make check<CR>
 
+map <m-a> ggVG
+
 " Go to windows
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-j> :wincmd j<CR>
