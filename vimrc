@@ -118,3 +118,7 @@ let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let NERDTreeDirArrows=0
 let NERDTreeWinSize=20
+
+
+" automatically launch these commands
+autocmd VimEnter * NERDTree
