@@ -83,14 +83,12 @@ autocmd BufNewFile,BufRead *.tex set tw=80
 autocmd BufNewFile,BufRead *.tex set textwidth=80
 autocmd BufNewFile,BufRead *.tex set wrapmargin
 
-au FileType haskell,vhdl,ada let b:comment_leader = '-- '
+au FileType haskell,vhdl,ada,lua let b:comment_leader = '-- '
 au FileType vim let b:comment_leader = '" '
 au FileType c,cpp,java let b:comment_leader = '// '
-au FileType sh,make let b:comment_leader = '# '
+au FileType sh,bash,shell,perl,make let b:comment_leader = '# '
 au FileType tex let b:comment_leader = '% '
 
-
-au Syntax * call SetupSyntaxQt()
 
 " configure tags - add additional tags here or comment out not-used ones
 " set tags+=~/.vim/tags/cpp
