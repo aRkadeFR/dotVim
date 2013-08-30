@@ -26,7 +26,6 @@ set splitright
 set number
 syntax on
 colorscheme rkadeFR
-set background=dark
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
@@ -46,7 +45,6 @@ set visualbell t_vb=    "Don't flashing the screen on error
 set showmode            "Show the current mode for insert
 set splitbelow
 set splitright
-set background=dark
 "set mouse=a         " Enable the mouse
 
 
@@ -72,22 +70,27 @@ set directory=~/.vim/backup
 set clipboard=unnamed  " Set the copy and paste in the clipboard
 set nocp
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" File type specific
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Specific command for filetype
-filetype plugin on
 filetype plugin indent on
-" associate *.less with css filetype
-au BufRead,BufNewFile *.less setfiletype css
+" associate file type with extension
+autocmd BufRead,BufNewFile *.less setfiletype css
+
+" When we know the filetype
+autocmd FileType haskell,vhdl,ada,lua let b:comment_leader = '-- '
+autocmd FileType vim let b:comment_leader = '" '
+autocmd FileType c,cpp,java let b:comment_leader = '// '
+autocmd FileType sh,python,bash,shell,perl,make let b:comment_leader = '# '
+autocmd FileType tex let b:comment_leader = '% '
+
+autocmd FileType python set iskeyword+=.
+
 " To set some file type specific settings, you can now use the following:
-
-autocmd BufNewFile,BufRead *.tex set tw=80
-autocmd BufNewFile,BufRead *.tex set textwidth=80
-autocmd BufNewFile,BufRead *.tex set wrapmargin
-
-au FileType haskell,vhdl,ada,lua let b:comment_leader = '-- '
-au FileType vim let b:comment_leader = '" '
-au FileType c,cpp,java let b:comment_leader = '// '
-au FileType sh,bash,shell,perl,make let b:comment_leader = '# '
-au FileType tex let b:comment_leader = '% '
+autocmd FileType tex set tw=80
+autocmd FileType tex set textwidth=80
+autocmd FileType tex set wrapmargin
 
 
 " configure tags - add additional tags here or comment out not-used ones
