@@ -77,6 +77,7 @@ set nocp
 filetype plugin indent on
 " associate file type with extension
 autocmd BufRead,BufNewFile *.less setfiletype css
+autocmd BufRead,BufNewFile *.tpl setfiletype html
 
 " When we know the filetype
 autocmd FileType haskell,vhdl,ada,lua let b:comment_leader = '-- '
