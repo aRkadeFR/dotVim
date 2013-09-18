@@ -12,11 +12,6 @@ nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 
-" Save with double space
-nnoremap <space><space> :wa<CR>
-nnoremap n nzz
-nnoremap } }zz
-
 " Comment and Uncomment
 noremap <silent> mc :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
 noremap <silent> mu :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
@@ -33,14 +28,6 @@ nnoremap <A-9> 9gt
 " F9 to F12 => show open windows
 noremap <silent> <F9> <Esc>:NERDTreeToggle<CR>
 noremap <silent> <F10> :BufExplorerHorizontalSplit<CR>
-noremap <silent> <F11> :TlistToggle<CR>
-"nnoremap <F10> :BufSurfBack<CR>
-"nnoremap <F11> :BufSurfForward<CR>
 
-
-" Switch between headers and sources
-nnoremap <C-i> :A<CR>
-
-" Shortcut for the :
-"nnoremap ; :
+" paste toggle
 set pastetoggle=<F9>
