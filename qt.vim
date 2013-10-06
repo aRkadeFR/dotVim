@@ -1,3 +1,5 @@
+let b:comment_leader = '// '
+
 syntax keyword Keyword signals
 syntax keyword Keyword slots
 syntax keyword Keyword Q_OBJECT
