@@ -1,3 +1,8 @@
+" This line should not be removed as it ensures that various options are
+" properly set to work with the Vim-related packages available in Debian.
+runtime! debian.vim
+
+
 " Load all my submodules 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -58,6 +63,7 @@ set visualbell      " Don't do beep
 set showmode            "Show the current mode for insert
 set splitbelow
 set splitright
+set sm
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
