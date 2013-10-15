@@ -36,6 +36,11 @@ snippet fori
 	{
 		${4:/* code */}
 	}
+snippet st
+	struct ${1:name}
+	{
+		${2:field}
+	};
 # foreach
 snippet foreach
 	foreach(${1:current}, ${2:MY_QLIST})
@@ -44,20 +49,39 @@ snippet foreach
 	}
 snippet qdebug
 	qDebug() << "[Debug] $1 (" << ${1:my_variable} << ")";${2}
-snippet qdebu
-	qDebug() << "[Debug] $1 (" << ${1:my_variable} << ")";${2}
-snippet qde
-	qDebug() << "[Debug] $1 (" << ${1:my_variable} << ")";${2}
 snippet debu
-	cerr << "[Debug] watch : $1(" << ${1:name_variable} << ")" << endl;
+	qDebug() << "[Debug] $1 (" << ${1:my_var};
 snippet cou
 	cout << "[Cout] : " << ${1} << endl;
 snippet Inc Cpp file with .hpp file
 	#include "${1:`Filename("$1")`}.hpp"${2}
-snippet Inc Cxx file with .hxx file
-	#include "${1:`Filename("$1")`}.hxx"${2}
+snippet inc 
+	#include <${1:`Filename("$1")`}${2:.hpp}>${3}
 snippet re
 	return ${1};${2}
+snippet def
+	#define ${1:}
+snippet ife
+	if (${1:})
+	{
+		${2:// body}
+	}
+	else
+	{
+		${3:// body}
+	}
+	${4:}
+snippet ifndef
+	#ifndef ${1:`toupper(Filename("$1"))`}_HPP
+	#define $1
+
+	#endif
+snippet deflib
+	#if defined(${1:VAR}_LIBRARY)
+	#define $1_EXPORT Q_DECL_EXPORT
+	#else
+	#define $1_EXPORT Q_DECL_IMPORT
+	#endif
 snippet tpl_cl
 	#ifndef $1
 	#define ${1:`toupper(Filename("$1_HPP"))`}
@@ -72,3 +96,12 @@ snippet setter
 # This is kind of convenient
 snippet .
 	::
+snippet t
+	this->
+snippet re
+	return ${1:};${2:}
+snippet if
+	if (${1:cond})
+	{
+		${2://body}
+	}
