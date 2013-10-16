@@ -7,4 +7,5 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.pm         setfiletype ovh
     au! BufRead,BufNewFile *.cpp        setfiletype qt
     au! BufRead,BufNewFile *.hpp        setfiletype qt
+    au! BufRead,BufNewFile *.md         setfiletype markdown
 augroup END
