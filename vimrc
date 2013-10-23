@@ -24,9 +24,7 @@ set expandtab 		    " Mettre des tabs et aucuns espaces
 " Load all my configuration files
 """""""""""""""""""""""""""""""""""""""""""""""""""
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
-execute 'source ' . $HOME . '/.vim/functions.vim'
 execute 'source ' . $HOME . '/.vim/nerdtree.vim'
-execute 'source ' . $HOME . '/.vim/bufexplorer.vim'
 execute 'source ' . $HOME . '/.vim/snipmate.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
