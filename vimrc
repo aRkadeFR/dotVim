@@ -77,3 +77,10 @@ set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" global variables
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:snips_author='aRkadeFR'
+

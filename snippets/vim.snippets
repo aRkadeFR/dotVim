@@ -1,8 +1,12 @@
 snippet header
-	" File: ${1:`expand('%:t')`}
-	" Author: ${2:`g:snips_author`}
-	" Description: ${3}
-	${4:" Last Modified: `strftime("%B %d, %Y")`}
+	"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+	" File:             ${1:`expand('%:t')`}
+	" Author:           ${2:`g:snips_author`}
+	" Description:      ${3}
+	" Last Modified:    `strftime("%B %d, %Y")`
+	" Version:          ${4:0.1}
+	"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+	${5}
 snippet guard
 	if exists('${1:did_`Filename()`}') || &cp${2: || version < 700}
 		finish
