@@ -14,3 +14,6 @@
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
     ignore = dirty
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
