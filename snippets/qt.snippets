@@ -31,12 +31,12 @@ snippet ns
 snippet cl
 	class ${1:`Filename('$1', 'name')`}
 	{
-		public:
-			explicit $1();
-			explicit $1(const $1& `tolower("$1")`);
-			virtual ~$1();
-		private:
-			${3:/* data */}
+	public:
+		explicit $1();
+		explicit $1(const $1& `tolower("$1")`);
+		virtual ~$1();
+	private:
+		${3:/* data */}
 	};
 snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++})
@@ -64,8 +64,6 @@ snippet Inc Cpp file with .hpp file
 	#include "${1:`Filename("$1")`}.hpp"${2}
 snippet inc 
 	#include <${1:`Filename("$1")`}${2:.hpp}>${3}
-snippet re
-	return ${1};${2}
 snippet def
 	#define ${1:}
 snippet ife
