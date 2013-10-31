@@ -13,3 +13,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle/vim-toggle-extensions"]
+	path = bundle/vim-toggle-extensions
+	url = git@github.com:aRkadeFR/vim-toggle-extensions.git
