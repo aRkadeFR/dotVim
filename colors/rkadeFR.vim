@@ -23,7 +23,7 @@ hi Identifier		ctermfg=45		cterm=none
 hi LineNr			ctermfg=85		cterm=none
 hi String			ctermfg=9		cterm=none
 hi Statement		ctermfg=190		cterm=none
-hi Comment			ctermfg=45      guifg=#40ffff
+hi Comment			ctermfg=40      guifg=#40ffff
 hi Function			ctermfg=13		cterm=none
 hi StorageClass		ctermfg=128		cterm=none
 hi Structure		ctermfg=128		cterm=none
