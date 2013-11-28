@@ -12,6 +12,10 @@ nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 
+" Go to tab
+nmap <silent> <C-n> :tabn<CR>
+nmap <silent> <C-p> :tabp<CR>
+
 nnoremap <A-1> 1gt
 nnoremap <A-2> 2gt
 nnoremap <A-3> 3gt
