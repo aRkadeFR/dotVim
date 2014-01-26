@@ -32,6 +32,7 @@ execute 'source ' . $HOME . '/.vim/snipmate.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup		"Git for tracking version and not vim !
 set noswapfile		"Git for tracking version and not vim !
+set ttimeoutlen=10  "No more timeoutlen on commands in insert wiht escape (<esc>O)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " History
