@@ -27,8 +27,7 @@ nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
 " F9 to F12 => show open windows
-noremap <silent> <F9> <Esc>:NERDTreeToggle<CR>
-noremap <silent> <F10> :BufExplorerHorizontalSplit<CR>
+nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 " paste toggle
 set pastetoggle=<F9>
