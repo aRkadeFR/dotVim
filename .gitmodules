@@ -16,3 +16,6 @@
 [submodule "bundle/vim-toggle-extensions"]
 	path = bundle/vim-toggle-extensions
 	url = git@github.com:aRkadeFR/vim-toggle-extensions.git
+[submodule "bundle/vim-easy-align"]
+	path = bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
