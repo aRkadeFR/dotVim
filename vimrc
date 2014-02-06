@@ -44,7 +44,7 @@ set undolevels=1000 " much more undo
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 syntax on
-colorscheme arkadeFR
+colorscheme aRkadeFR
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
