@@ -36,7 +36,7 @@ set noswapfile		"Git for tracking version and not vim !
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " History
 """""""""""""""""""""""""""""""""""""""""""""""""""
-set history=500 " much more history than base
+set history=500     " much more history than base
 set undolevels=1000 " much more undo
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,7 +44,7 @@ set undolevels=1000 " much more undo
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set number
 syntax on
-colorscheme rkadeFR
+colorscheme arkadeFR
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
@@ -54,12 +54,9 @@ set showcmd			" Show a line in the end of the terminal
 set cmdheight=2		" Set the command bar height
 set wildmenu		" Set the wild menu
 set laststatus=2	" Show the last status/command
-set foldlevelstart=4
-set visualbell      " Don't do beep
-set showmode            "Show the current mode for insert
+set novisualbell    " Don't do beep
 set splitbelow
 set splitright
-set sm
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
