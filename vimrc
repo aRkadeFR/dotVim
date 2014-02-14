@@ -75,6 +75,8 @@ set smartcase			" Smart > if lower case search ignore case
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+set lcs=tab:>\ ,eol:¬,trail:·
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " global variables

@@ -29,5 +29,9 @@ nnoremap <A-9> 9gt
 " F9 to F12 => show open windows
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
+
+" toggle list chars
+nmap <leader>l :set list!<CR>
+
 " paste toggle
 set pastetoggle=<F9>
