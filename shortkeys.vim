@@ -28,6 +28,7 @@ nnoremap <A-9> 9gt
 
 " F9 to F12 => show open windows
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
+vmap <Enter> <Plug>(EasyAlign)
 
 
 " toggle list chars
