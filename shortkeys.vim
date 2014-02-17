@@ -26,8 +26,11 @@ nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
-" F9 to F12 => show open windows
-nmap <silent> <Leader>n :NERDTreeToggle<CR>
+" leader touch
+nmap <silent> <Leader>t :NERDTreeToggle<CR>
+nmap <silent> <Leader>n :cnext<CR>
+nmap <silent> <Leader>p :cprevious<CR>
+
 vmap <Enter> <Plug>(EasyAlign)
 
 
