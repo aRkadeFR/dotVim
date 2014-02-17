@@ -78,6 +78,8 @@ set directory=~/.vim/backup
 
 set lcs=tab:>\ ,eol:¬,trail:·
 
+redir @m " all messages goes to register m
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " global variables
