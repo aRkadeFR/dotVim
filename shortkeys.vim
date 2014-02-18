@@ -26,10 +26,14 @@ nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
+
+
 " leader touch
-nmap <silent> <Leader>t :NERDTreeToggle<CR>
-nmap <silent> <Leader>n :cnext<CR>
-nmap <silent> <Leader>p :cprevious<CR>
+nmap <silent> <leader>t :NERDTreeToggle<CR>
+nmap <silent> <leader>n :cnext<CR>
+nmap <silent> <leader>p :cprevious<CR>
+nmap <silent> <leader>v :tabe ~/.vimrc <bar> NERDTree ~/.vim <bar> wincmd l <CR>
+nmap <silent> <leader>b :tabe ~/.bashrc <bar> NERDTree ~/.bash <bar> wincmd l <CR>
 
 vmap <Enter> <Plug>(EasyAlign)
 
