@@ -4,8 +4,7 @@ runtime! debian.vim
 
 
 " Load all my submodules 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " File type specific

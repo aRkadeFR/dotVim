@@ -9,7 +9,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "rkadeFR"
+let colors_name = "aRkadeFR"
 
 " colors
 "
