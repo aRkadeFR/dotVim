@@ -9,10 +9,12 @@
 
 function! IsKeyword(charArg)
     let l:found = 0
-    echom "test of:"a:charArg
+    let l:charNb = char2nr(a:charArg)
+    echom "test of:"l:charNb
     let l:keyword = split(&iskeyword, ',')
     for key in l:keyword
         echom "this is my key"key
+        if 
     endfor
 endfunction
 
