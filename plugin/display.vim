@@ -11,14 +11,14 @@
 let s:state = 0
 function! ChangeDisplayState()
     if s:state == 0
-        set nolist
-        set nonumber
+        setlocal nolist
+        setlocal nonumber
     elseif s:state == 1
-        set nolist
-        set number
+        setlocal nolist
+        setlocal number
     elseif s:state == 2
-        set list
-        set number
+        setlocal list
+        setlocal number
     endif
 
     let s:state = ((s:state + 1) % 3)
