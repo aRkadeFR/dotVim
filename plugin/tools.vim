@@ -8,14 +8,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! IsKeyword(charArg)
-    let l:found = 0
-    let l:charNb = char2nr(a:charArg)
-    echom "test of:"l:charNb
-    let l:keyword = split(&iskeyword, ',')
-    for key in l:keyword
-        echom "this is my key"key
-        if 
-    endfor
+    return (match(a:charArg, '\k') >= 0 ? 1 : -1 )
 endfunction
-
 
