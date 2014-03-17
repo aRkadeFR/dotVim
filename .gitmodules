@@ -30,7 +30,3 @@
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
     ignore = dirty
-[submodule "bundle/vim-bufexplorer"]
-	path = bundle/vim-bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer.git
-    ignore = dirty

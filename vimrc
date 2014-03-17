@@ -11,6 +11,7 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Specific command for filetype
 filetype plugin indent on
+syntax on
 " help filetype
 
 " FileType specific commands
@@ -43,7 +44,6 @@ set undolevels=1000 " much more undo
 " Display :
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set number
-syntax on
 colorscheme aRkadeFR
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
