@@ -34,3 +34,7 @@
 	path = bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
     ignore = dirty
+[submodule "bundle/vim-python-mode"]
+	path = bundle/vim-python-mode
+	url = https://github.com/klen/python-mode.git
+    ignore = dirty

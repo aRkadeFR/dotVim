@@ -30,6 +30,7 @@ nnoremap <A-9> 9gt
 
 " leader touch
 nmap <silent> <leader>t :NERDTreeToggle<CR>
+nmap <silent> <leader>r :call ReloadVim()<CR>
 nmap <silent> <leader>d :call ChangeDisplayState()<CR>
 nmap <silent> <leader>v :tabe ~/.vimrc <bar> NERDTree ~/.vim <bar> wincmd l <CR>
 nmap <silent> <leader>b :tabe ~/.bashrc <bar> NERDTree ~/.bash <bar> wincmd l <CR>
