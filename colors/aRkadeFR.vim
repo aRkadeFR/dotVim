@@ -1,23 +1,16 @@
-" Maintainer:	rkadeFR (contact@rkade.fr)
+" Maintainer:	aRkadeFR
 " Last Change:	May 16 2012
-
-set background=dark
-
-hi clear
 
 if exists("syntax_on")
   syntax reset
 endif
 
+set background=dark
+
 let colors_name = "aRkadeFR"
 
-" colors
-"
-" light green :  ctermfg=14 ctermbg=0 guifg=Cyan
-" cyan :    ctermfg=14 ctermbg=0 guifg=Cyan
-" purple :  ctermfg=128
-" orange :  ctermfg=166 ctermbg=0 gui=bold guifg=#60ff60
-" yellow :  ctermfg=190 gui=bold guifg=#ffff60
+" come from clear colors
+hi clear
 
 hi Identifier		ctermfg=45		cterm=none
 hi LineNr			ctermfg=85		cterm=none
@@ -44,3 +37,10 @@ hi Search           ctermfg=232     ctermbg=142
 hi VertSplit        ctermfg=0       ctermbg=15
 hi MatchParen       ctermbg=143     ctermfg=15
 hi Underlined       term=underline  ctermfg=none
+hi TabLine          ctermfg=0       ctermbg=166     cterm=none
+hi TabLineSel       ctermfg=166     ctermbg=0       cterm=none
+hi clear Visual
+hi Visual           cterm=reverse
+
+
+
