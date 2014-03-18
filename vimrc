@@ -14,10 +14,8 @@ filetype plugin indent on
 syntax on
 " help filetype
 
-" FileType specific commands
-set foldmethod=marker
-set foldmarker={,}
-set expandtab 		    " Mettre des tabs et aucuns espaces
+" no fold on startup
+set foldlevelstart=99
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
