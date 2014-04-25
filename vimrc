@@ -55,8 +55,12 @@ set laststatus=2	" Show the last status/command
 set novisualbell    " Don't do beep
 set splitbelow
 set splitright
+
+
 " quit the NERDTree when it is the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd InsertLeave * :set nopaste
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
