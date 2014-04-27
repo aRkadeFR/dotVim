@@ -17,4 +17,3 @@ function EditFtPlugin()
         execute ":tabnew ~/.vim/ftplugin/".&filetype.".vim"
     endif
 endfunction
-

@@ -57,6 +57,10 @@ set novisualbell    " Don't do beep
 set splitbelow
 set splitright
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" tag part
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags+=~/tags
 
 " quit the NERDTree when it is the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
