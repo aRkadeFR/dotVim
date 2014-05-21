@@ -5,12 +5,12 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set background=dark
-
-let colors_name = "aRkadeFR"
-
 " come from clear colors
 hi clear
+
+set background=dark
+
+let g:colors_name = "aRkadeFR"
 
 hi Identifier		ctermfg=45		cterm=none
 hi LineNr			ctermfg=85		cterm=none

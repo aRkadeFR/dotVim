@@ -2,7 +2,6 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
-
 " Load all my submodules 
 execute pathogen#infect()
 
@@ -24,6 +23,8 @@ set foldlevelstart=99
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/nerdtree.vim'
 execute 'source ' . $HOME . '/.vim/snipmate.vim'
+execute 'source ' . $HOME . '/.vim/lightline.vim'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance
@@ -41,8 +42,8 @@ set undolevels=1000 " much more undo
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Display :
 """""""""""""""""""""""""""""""""""""""""""""""""""
-set number
 colorscheme aRkadeFR
+set number
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
@@ -88,4 +89,3 @@ redir @m " all messages goes to register m
 " global variables
 """""""""""""""""""""""""""""""""""""""""""""""""""
 let g:snips_author='aRkadeFR'
-
