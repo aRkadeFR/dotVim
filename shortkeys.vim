@@ -34,6 +34,7 @@ nmap <silent> <leader>d :call ChangeDisplayState()<CR>
 nmap <silent> <leader>v :tabe ~/.vimrc <bar> NERDTree ~/.vim <bar> wincmd l <CR>
 nmap <silent> <leader>b :tabe ~/.bashrc <bar> NERDTree ~/.bash <bar> wincmd l <CR>
 nmap <silent> <leader>h :noh<CR>
+nmap <silent> <leader>s :set spell!<CR>
 
 vmap <Enter> <Plug>(EasyAlign)
 
