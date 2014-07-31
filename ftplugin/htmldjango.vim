@@ -1,0 +1,4 @@
+
+
+ia <buffer> deb {% debug %}
+
