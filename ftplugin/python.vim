@@ -16,3 +16,5 @@ ia <buffer> cri logger.critical(
 ia <buffer> re return
 
 ia <buffer> implog import logging<CR>logger = logging.getLogger(__name__)<CR>
+
+autocmd BufWritePost *.py call Flake8()

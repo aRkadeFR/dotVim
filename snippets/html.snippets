@@ -161,8 +161,6 @@ snippet form
 
 	<p><input type="submit" value="Continue &rarr;"`Close()`></p>
 	</form>
-snippet h1
-	<h1 id="${1:heading}">${2:$1}</h1>
 snippet input
 	<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="${3}"`Close()`>${4}
 snippet label
@@ -193,6 +191,16 @@ snippet cl
 snippet ul
 	<ul class="${1}">
 		${2}
-	</ul>
+	</ul>${3}
 snippet li
-	<li class="${1}">${2}</li>
+	<li class="${1}">${2}</li>${3}
+snippet button
+	<button class="${1:class}">${2}</button>${3}
+snippet p
+	<p>${1}</p>${2}
+snippet h1
+	<h1 id="${1:heading}">${2:$1}</h1>${3}
+snippet h3
+	<h3 id="${1:heading}">${2:$1}</h3>${3}
+snippet im
+	<img src="${1}" alt="${2}" />
