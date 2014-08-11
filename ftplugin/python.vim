@@ -3,6 +3,9 @@ let b:comment_leader = '# '
 
 set foldmethod=indent
 
+setlocal path+=..
+setlocal path+=../../lib/python2.7/site-packages
+
 " for the code
 " iab <buffer> KEY REPLACE_TEXT
 ia <buffer> she #!/usr/bin/env python3
@@ -15,6 +18,6 @@ ia <buffer> err logger.error(
 ia <buffer> cri logger.critical(
 ia <buffer> re return
 
-ia <buffer> implog import logging<CR>logger = logging.getLogger(__name__)<CR>
+ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
 
-autocmd BufWritePost *.py call Flake8()
+"not for the moment cause multiple run autocmd BufWritePost *.py call Flake8()
