@@ -5,6 +5,7 @@ set foldmethod=indent
 
 setlocal path+=..
 setlocal path+=../../lib/python2.7/site-packages
+setlocal path+=../lib/python2.7/site-packages
 
 " for the code
 " iab <buffer> KEY REPLACE_TEXT
