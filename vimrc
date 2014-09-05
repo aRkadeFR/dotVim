@@ -24,6 +24,7 @@ execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/nerdtree.vim'
 execute 'source ' . $HOME . '/.vim/snipmate.vim'
 execute 'source ' . $HOME . '/.vim/lightline.vim'
+execute 'source ' . $HOME . '/.local_vim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,11 +57,6 @@ set laststatus=2	" Show the last status/command
 set novisualbell    " Don't do beep
 set splitbelow
 set splitright
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" tag part
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-set tags+=~/tags
 
 " quit the NERDTree when it is the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

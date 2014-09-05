@@ -12,12 +12,14 @@ setlocal path+=../lib/python2.7/site-packages
 ia <buffer> she #!/usr/bin/env python3
 ia <buffer> mai if __name__ == '__main__':<CR>  print("doing main")
 ia <buffer> uselog import logging<CR>logger = logging.getLogger(__name__)
-ia <buffer> deb logger.debug(
-ia <buffer> inf logger.info(
-ia <buffer> war logger.warning(
-ia <buffer> err logger.error(
-ia <buffer> cri logger.critical(
+ia <buffer> deb logger.debug(u
+ia <buffer> inf logger.info(u
+ia <buffer> war logger.warning(u
+ia <buffer> err logger.error(u
+ia <buffer> cri logger.critical(u
+ia <buffer> pr print(u
 ia <buffer> re return
+ia <buffer> imp import
 
 ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
 

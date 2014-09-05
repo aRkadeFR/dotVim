@@ -26,6 +26,8 @@ nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
+cnoremap <C-r>/ <C-r>=substitute(@/, '\\[<>]', '' ,'g')<CR>
+
 
 
 " leader touch
