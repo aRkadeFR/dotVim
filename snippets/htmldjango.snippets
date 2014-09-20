@@ -6,6 +6,8 @@ snippet h3
 	<h3>${1:content}</h3>
 snippet p
 	<p>${1:content}</p>
+snippet img
+	<img src="{% static '${1:source}' %}" alt="${2:name image}" />${3}
 snippet div
 	<div class="${1:cl}">
 		${2}
