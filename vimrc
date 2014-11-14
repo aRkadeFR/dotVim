@@ -28,11 +28,16 @@ execute 'source ' . $HOME . '/.local_vim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
+" tag part
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags=.ctags
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup		"Git for tracking version and not vim !
 set noswapfile		"Git for tracking version and not vim !
-set ttimeoutlen=10  "No more timeoutlen on commands in insert wiht escape (<esc>O)
+set timeoutlen=100  "No more timeoutlen on commands in insert wiht escape (<esc>O)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " History

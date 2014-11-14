@@ -21,6 +21,7 @@ ia <buffer> cri logger.critical(u
 ia <buffer> pr print(u
 ia <buffer> re return
 ia <buffer> imp import
+ia <buffer> enc # -*- coding: utf-8 -*-
 
 ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
 
