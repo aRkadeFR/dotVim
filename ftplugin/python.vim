@@ -24,5 +24,6 @@ ia <buffer> imp import
 ia <buffer> enc # -*- coding: utf-8 -*-
 
 ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
+ia <buffer> pdb import pdb<CR>pdb.set_trace()
 
 "not for the moment cause multiple run autocmd BufWritePost *.py call Flake8()
