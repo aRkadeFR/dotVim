@@ -23,7 +23,6 @@ set foldlevelstart=99
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/nerdtree.vim'
 execute 'source ' . $HOME . '/.vim/snipmate.vim'
-execute 'source ' . $HOME . '/.vim/lightline.vim'
 execute 'source ' . $HOME . '/.local_vim'
 
 
