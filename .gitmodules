@@ -6,17 +6,9 @@
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
     ignore = dirty
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
-    ignore = dirty
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-    ignore = dirty
-[submodule "bundle/vim-toggle-extensions"]
-	path = bundle/vim-toggle-extensions
-	url = git@github.com:aRkadeFR/vim-toggle-extensions.git
     ignore = dirty
 [submodule "bundle/vim-easy-align"]
 	path = bundle/vim-easy-align
@@ -25,10 +17,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-    ignore = dirty
-[submodule "bundle/vim-flake8"]
-	path = bundle/vim-flake8
-	url = https://github.com/nvie/vim-flake8.git
     ignore = dirty
 [submodule "bundle/lightline"]
 	path = bundle/lightline
