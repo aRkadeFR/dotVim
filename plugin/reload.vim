@@ -10,4 +10,3 @@
 function! ReloadVim()
     set scroll&
 endfunction
-

@@ -22,7 +22,6 @@ set foldlevelstart=99
 """""""""""""""""""""""""""""""""""""""""""""""""""
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 execute 'source ' . $HOME . '/.vim/nerdtree.vim'
-execute 'source ' . $HOME . '/.vim/snipmate.vim'
 execute 'source ' . $HOME . '/.local_vim'
 
 
@@ -87,9 +86,3 @@ set directory=~/.vim/backup
 set lcs=tab:>\ ,eol:¬,trail:·
 
 redir @m " all messages goes to register m
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" global variables
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:snips_author='aRkadeFR'

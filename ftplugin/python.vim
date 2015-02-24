@@ -1,7 +1,8 @@
 
 let b:comment_leader = '# '
 
-set foldmethod=indent
+setlocal foldmethod=indent
+setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " for the code
 " iab <buffer> KEY REPLACE_TEXT
@@ -24,3 +25,4 @@ ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
 ia <buffer> pdb import pdb<CR>pdb.set_trace()
 
 "not for the moment cause multiple run autocmd BufWritePost *.py call Flake8()
+"
