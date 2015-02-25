@@ -1,3 +1,4 @@
 ftplugin/mail.vim
 plugin/projects.vim
 spell*
+local.vim

@@ -1,0 +1,1 @@
+/home/arkadefr/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
