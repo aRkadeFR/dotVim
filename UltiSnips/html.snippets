@@ -1,6 +1,28 @@
 
-snippet div "div class" b
-<div class="${1:class}">
-    ${2}
+snippet span "span with class" w
+<span class="${1:klass}">$0</span>
+endsnippet
+
+snippet button "button" w
+<button class="${1:TYPE}">$0</button>
+endsnippet
+
+snippet input "input" w
+<input type="${1:TYPE}" name="${2:NAME}" />$0
+endsnippet
+
+snippet caption "caption" b
+<caption>$0</caption>
+endsnippet
+
+snippet form "form post" b
+<form role="form" action="" method="${1:post}">
+	$0
+</form>
+endsnippet
+
+snippet div "div with class" b
+<div class="${1:klass}">
+    ${0:#Inside}
 </div>
 endsnippet

@@ -1,0 +1,2 @@
+
+ia <buffer> re return
