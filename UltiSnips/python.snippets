@@ -7,6 +7,11 @@ snippet #! "Shebang header for python scripts" b
 $0
 endsnippet
 
+snippet cl "class" b
+class ${2:ClassModel}(${1:object}):
+	${0:pass}
+endsnippet
+
 snippet imain "if main" b
 if __name__ == '__main__':
     ${1:main()}$0
