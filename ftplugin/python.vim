@@ -18,6 +18,7 @@ ia <buffer> pr print(
 ia <buffer> re return
 ia <buffer> imp import
 ia <buffer> uni from __future__ import unicode_literals
+ia <buffer> abs from __future__ import absolute_import
 ia <buffer> log Logger = logging.getLogger(
 ia <buffer> enc # -*- coding: utf-8 -*-
 
