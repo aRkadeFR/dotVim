@@ -3,3 +3,9 @@ extends html
 snippet inc "include template" b
 {% include "${1:template_name.html}" %}${0}
 endsnippet
+
+snippet block "block" b
+{% block ${1:name_block} %}
+$0
+{% endblock %}
+endsnippet

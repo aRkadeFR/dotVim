@@ -19,6 +19,7 @@ ia <buffer> re return
 ia <buffer> imp import
 ia <buffer> uni from __future__ import unicode_literals
 ia <buffer> abs from __future__ import absolute_import
+ia <buffer> uget from django.utils.translation import ugettext_lazy as _
 ia <buffer> log Logger = logging.getLogger(
 ia <buffer> enc # -*- coding: utf-8 -*-
 
