@@ -9,16 +9,19 @@ endsnippet
 
 snippet cl "class" b
 class ${1:ClassModel}(${2:object}):
+	""" ${3:DocString for the class} """
 	${0:pass}
 endsnippet
 
 snippet met "method" b
 def ${1:MethodName}(self${2:, other_argument}):
+	""" ${3:DocString for method name} """
 	${0:pass}
 endsnippet
 
 snippet fun "function" b
 def ${1:FuncName}(${2:arguments}):
+	""" ${3:DocString for func} """
 	${0:pass}
 endsnippet
 
@@ -30,6 +33,17 @@ endsnippet
 snippet meta "class Meta" b
 class Meta:
 	${1}
+endsnippet
+
+snippet tr "try" b
+try:
+	${1:pass # can raise errors}
+except ${2:Exception} as ${3:exc}:
+	${4:pass # handling errors}
+else:
+	${5:pass # logic after raising error}
+finally:
+	${0:pass # logic run all the time}
 endsnippet
 
 snippet init "method init" b
