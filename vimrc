@@ -21,6 +21,7 @@ set foldlevelstart=99
 " tag part
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=.ctags
+set tags+=../.ctags
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance
