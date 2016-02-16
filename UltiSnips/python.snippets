@@ -46,7 +46,8 @@ finally:
 	${0:pass # logic run all the time}
 endsnippet
 
-snippet init "method init" b
-def __init__(self${1:, }):
+snippet init "method init wit super for debug" b
+def __init__(self, *args, **kwargs):
 	$0
+	return super(${1:ClassName}, self).__init__(*args, **kwargs)
 endsnippet
