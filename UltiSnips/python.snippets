@@ -51,3 +51,9 @@ def __init__(self, *args, **kwargs):
 	$0
 	return super(${1:ClassName}, self).__init__(*args, **kwargs)
 endsnippet
+
+snippet disp "dispatch override to debug" b
+def dispatch(self, *args, **kwargs):
+	import ipdb; ipdb.set_trace()
+	return super(${1:ClassName}, self).dispatch(*args, **kwargs)
+endsnippet
