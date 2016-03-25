@@ -22,6 +22,8 @@ set foldlevelstart=99
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=.ctags
 set tags+=../.ctags
+set tags+=.git/ctags
+set tags+=../.git/ctags
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance
