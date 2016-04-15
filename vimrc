@@ -77,25 +77,12 @@ set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+set backspace=indent,eol,start
+set backspace=2
 
 set lcs=tab:>\ ,eol:¬,trail:·
 
 redir @m " all messages goes to register m
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Load all my configuration files
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" nerdtree
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-"Options for the NERDTree
-let NERDTreeChristmas=1
-let NERDTreeChDirMode=0
-let NERDTreeShowHidden=0
-let NERDTreeShowBookmarks=1
-let NERDTreeDirArrows=0
-let NERDTreeWinSize=20
-let NERDTreeIgnore=['\.pyc', '__pycache__']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " shortkeys
