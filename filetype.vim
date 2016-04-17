@@ -12,4 +12,6 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.{cpp,hpp}          setfiletype qt
 	" markdown
     au! BufRead,BufNewFile *.{md,markdown}      setfiletype markdown
+	" SQL
+    au! BufRead,BufNewFile *.{sql,pg}      		setfiletype sql
 augroup END
