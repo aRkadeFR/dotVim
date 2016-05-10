@@ -2,6 +2,9 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
+" Add the ~/Projects path
+set  path+=~/Projects
+
 " Load all my submodules 
 execute pathogen#infect()
 

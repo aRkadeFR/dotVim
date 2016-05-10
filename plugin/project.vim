@@ -1,7 +1,6 @@
 " project to setup the path as we want
 " 
 
-
 function! RunProject() 
 	set path&
 	echom "setup path for templates"
