@@ -4,17 +4,17 @@
 function! RunProject() 
 	set path&
 	echom "setup path for templates"
-	set path+=api/templates
-	set path+=employee/templates
-	set path+=theme/templates
-	set path+=ticket/templates
-	set path+=toolkit/templates
-	set path+=manager/templates
-	set path+=knowledgebase/templates
-	set path+=custom_form/templates
-	set path+=administration/templates
-	set path+=category/templates
-	set path+=document/templates
-	set path+=processes/templates
-	set path+=junction/templates
+	set path+=peopleask/api/templates
+	set path+=peopleask/employee/templates
+	set path+=peopleask/theme/templates
+	set path+=peopleask/ticket/templates
+	set path+=peopleask/toolkit/templates
+	set path+=peopleask/manager/templates
+	set path+=peopleask/knowledgebase/templates
+	set path+=peopleask/custom_form/templates
+	set path+=peopleask/administration/templates
+	set path+=peopleask/category/templates
+	set path+=peopleask/document/templates
+	set path+=peopleask/processes/templates
+	set path+=peopleask/junction/templates
 endfunction
