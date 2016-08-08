@@ -3,3 +3,4 @@ plugin/projects.vim
 spell*
 local.vim
 projects/*
+.netrwhist
