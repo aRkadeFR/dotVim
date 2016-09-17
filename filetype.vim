@@ -6,6 +6,8 @@ endif
 augroup filetypedetect
 	" mail
 	au! BufRead,BufNewFile *mutt-*				setfiletype mail
+	" html
+    au! BufRead,BufNewFile *.{html,hbs}         setfiletype html
 	" python
     au! BufRead,BufNewFile *.{py}               setfiletype python
 	" qt/cpp
