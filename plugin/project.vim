@@ -4,6 +4,7 @@
 function! RunProject() 
 	set path&
 	echom "setup path for templates"
+	set path+=~/Projects
 	set path+=peopleask/api/templates
 	set path+=peopleask/employee/templates
 	set path+=peopleask/theme/templates

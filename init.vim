@@ -33,7 +33,13 @@ set tags+=../.git/ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup		"Git for tracking version and not vim !
 set noswapfile		"Git for tracking version and not vim !
+set timeout
+set ttimeout
 set timeoutlen=100  "No more timeoutlen on commands in insert wiht escape (<esc>O)
+set ttimeoutlen=100  "No more timeoutlen on commands in insert wiht escape (<esc>O)
+
+" remove mouse
+set mouse-=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " History
