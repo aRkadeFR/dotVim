@@ -45,7 +45,7 @@ set undolevels=1000 " much more undo
 " Display :
 """""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme aRkadeFR
-set number
+set nonumber
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
 set incsearch		" Set Current Highlight as you type
