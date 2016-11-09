@@ -5,9 +5,6 @@ runtime! debian.vim
 " Add the ~/Projects path
 set  path+=~/Projects
 
-" Load all my submodules 
-execute pathogen#infect()
-
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " File type specific
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,7 +41,7 @@ set undolevels=1000 " much more undo
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Display :
 """""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme aRkadeFR
+" loaded solarized theme
 set nonumber
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
@@ -59,23 +56,16 @@ set novisualbell    " Don't do beep
 set splitbelow
 set splitright
 
-" quit the NERDTree when it is the last window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd InsertLeave * :set nopaste
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Don't have to write or undo for editing another file
-set hidden 			" Very important !
+set hidden 				" Very important !
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set ambiwidth=single
 set autoindent 			" Possible : smartindent, autoindent, cindent
-set smarttab			" Inserting tabs according to shiftwidth
-set tabstop=4 			" Mettre une tabulation 
-set shiftwidth=4 		" Nombre d'espaces pour une indentation
 set ignorecase			" Ignore case when searching
 set smartcase			" Smart > if lower case search ignore case
 set backupdir=~/.vim/backup
@@ -110,19 +100,14 @@ nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
-cnoremap <C-r>/ <C-r>=substitute(@/, '\\[<>]', '' ,'g')<CR>
-
 
 
 " leader touch
-nmap <silent> <leader>t :NERDTreeToggle<CR>
-nmap <silent> <leader>d :call ChangeDisplayState()<CR>
-nmap <silent> <leader>v :tabe ~/.vimrc <bar> NERDTree ~/.vim <bar> wincmd l <CR>
-nmap <silent> <leader>b :tabe ~/.bashrc <bar> NERDTree ~/.bash <bar> wincmd l <CR>
-nmap <silent> <leader>h :noh<CR>
-nmap <silent> <leader>s :set spell!<CR>
-
-vmap <Enter> <Plug>(EasyAlign)
+nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <leader>d :call ChangeDisplayState()<CR>
+nnoremap <silent> <leader>v :tabe $MYVIMRC <CR>
+nnoremap <silent> <leader>b :tabe ~/.bashrc <CR>
+nnoremap <silent> <leader>s :set spell!<CR>
 
 
 " paste toggle

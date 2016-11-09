@@ -11,7 +11,7 @@ function! POpen(projectname)
 	echom "opening the django subproject " a:projectname
 
 	" disable the NerdTree, and all windows
-	NERDTreeClose
+	" NERDTreeClose
 	let s:nb_windows = winnr("$")
 	echom "nb of windows: " s:nb_windows
 	let s:index = 1
@@ -23,7 +23,7 @@ function! POpen(projectname)
 	" now we have a brand new layout
 	execute "find " . a:projectname
 	execute "lcd ~/Projects/" . a:projectname
-	NERDTree "~/Projects/" . a:projectname
+	" NERDTree "~/Projects/" . a:projectname
 	execute "wincmd l"
 endfunction
 
