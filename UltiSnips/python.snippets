@@ -48,8 +48,8 @@ endsnippet
 
 snippet init "method init wit super for debug" b
 def __init__(self, *args, **kwargs):
+	super(${1:ClassName}, self).__init__(*args, **kwargs)
 	$0
-	return super(${1:ClassName}, self).__init__(*args, **kwargs)
 endsnippet
 
 snippet ini "method init wit super for debug" b

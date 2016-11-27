@@ -24,6 +24,7 @@ ia <buffer> sup super(__class__,
 ia <buffer> log logger = logging.getLogger(
 ia <buffer> enc # -*- coding: utf-8 -*-
 ia <buffer> ign # flake8: noqa
+ia <buffer> ass assert
 
 ia <buffer> implog import logging<CR>logger = logging.getLogger('test')<CR>
 ia <buffer> pdb import ipdb; ipdb.set_trace()
