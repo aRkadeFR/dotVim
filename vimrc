@@ -42,6 +42,7 @@ set undolevels=1000 " much more undo
 " Display :
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " loaded solarized theme
+set background=dark	" set the background dark
 set nonumber
 set showmatch 		" Show matching parenthesis
 set hlsearch		" Highligh search
