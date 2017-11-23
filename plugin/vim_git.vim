@@ -7,3 +7,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 command! GitVimPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
+command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
