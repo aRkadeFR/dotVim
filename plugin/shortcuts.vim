@@ -11,6 +11,7 @@ function! GitCommit(message)
 endfunction
 
 command! Bash :execute 'e ~/.bashrc'
-command! GitPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
-command! GitPull :execute '!(cd ~/.vim ; git fetch ; git status)'
+command! GitVimPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
+command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
+command! GitPush :execute '!git push'
 command! -nargs=1 GitCommit :call GitCommit('<args>')
