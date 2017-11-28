@@ -63,3 +63,7 @@ def dispatch(self, *args, **kwargs):
 	import ipdb; ipdb.set_trace()
 	return super(${1:ClassName}, self).dispatch(*args, **kwargs)
 endsnippet
+
+snippet print "print simple variable" b
+print("Debug $1: {}".format(${1:variable}))${0}
+endsnippet
