@@ -17,5 +17,7 @@ command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
 command! GitPush :execute '!git push'
 command! -nargs=1 GitCommit :call GitCommit('<args>')
 
+command! Lcd :lcd expand('%:h')
+
 imap <leader>t <C-R>=strftime('%c')<ESC>
 imap <leader>d <C-R>=strftime('%d/%m/%Y')<ESC>
