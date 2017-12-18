@@ -6,4 +6,4 @@
 " Version:          0.1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-command! FormatSQL execute ':call Tabularize(' . "'" . '/^[^ ]*\zs/r0c1l0' . "'" . ')'
+command! SQLFormat execute ':call Tabularize(' . "'" . '/^[^ ]*\zs/r0c1l0' . "'" . ')'
