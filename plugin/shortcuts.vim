@@ -13,7 +13,7 @@ endfunction
 function! Title(character)
     yank t
     put t
-    substitute /./-/g
+    execute 'substitute /./' . a:character . '/g'
 endfunction
 
 command! FileExe :execute '!chmod u+x %'
