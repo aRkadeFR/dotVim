@@ -30,7 +30,8 @@ set tags+=../.git/ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup		"Git for tracking version and not vim !
 set noswapfile		"Git for tracking version and not vim !
-set timeoutlen=100  "No more timeoutlen on commands in insert wiht escape (<esc>O)
+set timeoutlen=100  	"No more timeoutlen on commands in insert wiht escape (<esc>O)
+set autoread 		"Set the autoread
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " History
@@ -100,7 +101,6 @@ nnoremap <A-6> 6gt
 nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
-
 
 
 " leader touch

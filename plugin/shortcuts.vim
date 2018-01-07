@@ -16,7 +16,7 @@ function! Title(character)
     execute 'substitute /./' . a:character . '/g'
 endfunction
 
-command! FileExe :execute '!chmod u+x %'
+command! FileExe :execute 'silent !chmod u+x %' | redraw!
 command! Bash :execute 'e ~/.bashrc'
 command! GitVimPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
 command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
