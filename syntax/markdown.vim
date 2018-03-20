@@ -61,7 +61,7 @@ execute 'syn region htmlBoldItalic matchgroup=mkdBoldItalic start="\%(^\|\s\)\zs
 syn region mkdFootnotes matchgroup=mkdDelimiter start="\[^"    end="\]"
 execute 'syn region mkdID matchgroup=mkdDelimiter    start="\["    end="\]" contained oneline' . s:conceal
 execute 'syn region mkdURL matchgroup=mkdDelimiter   start="("     end=")"  contained oneline' . s:conceal
-execute 'syn region mkdLink matchgroup=mkdDelimiter  start="\\\@<!!\?\[" end="\n\{-,1}[^]]\{-}\zs\]\ze[[(]" contains=@mkdNonListItem,@Spell nextgroup=mkdURL,mkdID skipwhite oneline' . s:concealends
+execute 'syn region mkdLink matchgroup=mkdDelimiter  start="\\\@<!!\?\[\ze[^]\n]*\n\?[^]\n]*\][[(]" end="\]" contains=@mkdNonListItem,@Spell nextgroup=mkdURL,mkdID skipwhite' . s:concealends
 
 " Autolink without angle brackets.
 " mkd  inline links:      protocol     optional  user:pass@  sub/domain                    .com, .co.uk, etc         optional port   path/querystring/hash fragment
@@ -75,7 +75,7 @@ syn region  mkdInlineURL matchgroup=mkdDelimiter start="(\(https\?:\/\/\(\w\+\(:
 syn region mkdInlineURL matchgroup=mkdDelimiter start="\\\@<!<\ze[a-z][a-z0-9,.-]\{1,22}:\/\/[^> ]*>" end=">"
 
 " Link definitions: [id]: URL (Optional Title)
-syn region mkdLinkDef matchgroup=mkdDelimiter   start="^ \{,3}\zs\[" end="]:" oneline nextgroup=mkdLinkDefTarget skipwhite
+syn region mkdLinkDef matchgroup=mkdDelimiter   start="^ \{,3}\zs\[\^\@!" end="]:" oneline nextgroup=mkdLinkDefTarget skipwhite
 syn region mkdLinkDefTarget start="<\?\zs\S" excludenl end="\ze[>[:space:]\n]"   contained nextgroup=mkdLinkTitle,mkdLinkDef skipwhite skipnl oneline
 syn region mkdLinkTitle matchgroup=mkdDelimiter start=+"+     end=+"+  contained
 syn region mkdLinkTitle matchgroup=mkdDelimiter start=+'+     end=+'+  contained
@@ -108,11 +108,9 @@ syn match  mkdCode         /^\s*\n\(\(\s\{4,}[^ ]\|\t\+[^\t]\).*\n\)\+/ containe
 syn match  mkdListItem     /^\s*\%([-*+]\|\d\+\.\)\ze\s\+/ contained
 syn region mkdListItemLine start="^\s*\%([-*+]\|\d\+\.\)\s\+" end="$" oneline contains=@mkdNonListItem,mkdListItem,@Spell
 syn region mkdNonListItemBlock start="\(\%^\(\s*\([-*+]\|\d\+\.\)\s\+\)\@!\|\n\(\_^\_$\|\s\{4,}[^ ]\|\t+[^\t]\)\@!\)" end="^\(\s*\([-*+]\|\d\+\.\)\s\+\)\@=" contains=@mkdNonListItem,@Spell
-syn match  mkdRule         /^\s*\*\s\{0,1}\*\s\{0,1}\*$/
-syn match  mkdRule         /^\s*-\s\{0,1}-\s\{0,1}-$/
-syn match  mkdRule         /^\s*_\s\{0,1}_\s\{0,1}_$/
-syn match  mkdRule         /^\s*-\{3,}$/
-syn match  mkdRule         /^\s*\*\{3,5}$/
+syn match  mkdRule         /^\s*\*\s\{0,1}\*\s\{0,1}\*\(\*\|\s\)*$/
+syn match  mkdRule         /^\s*-\s\{0,1}-\s\{0,1}-\(-\|\s\)*$/
+syn match  mkdRule         /^\s*_\s\{0,1}_\s\{0,1}_\(_\|\s\)*$/
 
 " YAML frontmatter
 if get(g:, 'vim_markdown_frontmatter', 0)
@@ -143,8 +141,8 @@ endif
 
 if get(g:, 'vim_markdown_math', 0)
   syn include @tex syntax/tex.vim
-  syn region mkdMath start="\\\@<!\$" end="\$" contains=@tex keepend
-  syn region mkdMath start="\\\@<!\$\$" end="\$\$" contains=@tex keepend
+  syn region mkdMath start="\\\@<!\$" end="\$" skip="\\\$" contains=@tex keepend
+  syn region mkdMath start="\\\@<!\$\$" end="\$\$" skip="\\\$" contains=@tex keepend
 endif
 
 syn cluster mkdNonListItem contains=@htmlTop,htmlItalic,htmlBold,htmlBoldItalic,mkdFootnotes,mkdInlineURL,mkdLink,mkdLinkDef,mkdLineBreak,mkdBlockquote,mkdCode,mkdRule,htmlH1,htmlH2,htmlH3,htmlH4,htmlH5,htmlH6,mkdMath

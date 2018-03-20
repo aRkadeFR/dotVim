@@ -150,6 +150,13 @@ To disable conceal regardless of `conceallevel` setting, add the following to yo
 let g:vim_markdown_conceal = 0
 ```
 
+To disable math conceal with LaTeX math syntax enabled, add the following to your `.vimrc`:
+
+```vim
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+```
+
 ### Fenced code block languages
 
 You can use filetype name as fenced code block languages for syntax highlighting.
@@ -166,6 +173,37 @@ This will cause the following to be highlighted using the `cs` filetype syntax.
     ```
 
 Default is `['c++=cpp', 'viml=vim', 'bash=sh', 'ini=dosini']`.
+
+### Follow named anchors
+
+This feature allows ge to follow named anchors in links of the form
+`file#anchor` or just `#anchor`, where file may omit the `.md` extension as
+usual. Two variables control its operation:
+
+```vim
+let g:vim_markdown_follow_anchor = 1
+```
+
+This tells vim-markdown whether to attempt to follow a named anchor in a link or
+not. When it is 1, and only if a link can be split in two parts by the pattern
+'#', then the first part is interpreted as the file and the second one as the
+named anchor. This also includes urls of the form `#anchor`, for which the first
+part is considered empty, meaning that the target file is the current one. After
+the file is opened, the anchor will be searched.
+
+Default is `0`.
+
+```vim
+let g:vim_markdown_anchorexpr = "'<<'.v:anchor.'>>'"
+```
+
+This expression will be evaluated substituting `v:anchor` with a quoted string
+that contains the anchor to visit. The result of the evaluation will become the
+real anchor to search in the target file. This is useful in order to convert
+anchors of the form, say, `my-section-title` to searches of the form `My Section
+Title` or `<<my-section-title>>`.
+
+Default is `''`.
 
 ### Syntax extensions
 
@@ -230,7 +268,7 @@ let g:vim_markdown_new_list_item_indent = 2
 
 ### Do not require .md extensions for Markdown links
 
-If you want to have a link like this `[link text](link-url)` and follow it for editing in vim using the "ge" command, but have it open the file "link-url.md" instead of the file "link-url", then use this option:
+If you want to have a link like this `[link text](link-url)` and follow it for editing in vim using the `ge` command, but have it open the file "link-url.md" instead of the file "link-url", then use this option:
 
 ```vim
 let g:vim_markdown_no_extensions_in_markdown = 1
@@ -241,10 +279,18 @@ Normal behaviour would be that vim-markup required you to do this `[link text](l
 
 ### Auto-write when following link
 
-If you follow a link like this `[link text](link-url)` using the "ge" shortcut, this option will automatically save any edits you made before moving you:
+If you follow a link like this `[link text](link-url)` using the `ge` shortcut, this option will automatically save any edits you made before moving you:
 
 ```vim
 let g:vim_markdown_autowrite = 1
+```
+
+### Change default file extension
+
+If you would like to use a file extension other than `.md` you may do so using the `vim_markdown_auto_extension_ext` variable:
+
+```vim
+let g:vim_markdown_auto_extension_ext = 'txt'
 ```
 
 ## Mappings
