@@ -81,7 +81,7 @@ class SnippetManager(object):
         self._snip_expanded_in_action = False
         self._inside_action = False
 
-        self._last_inserted_char = ''
+        self._last_change = ('', 0)
 
         self._added_snippets_source = AddedSnippetsSource()
         self.register_snippet_source('ultisnips_files', UltiSnipsFileSource())
@@ -835,14 +835,27 @@ class SnippetManager(object):
     def _track_change(self):
         self._should_update_textobjects = True
 
-        inserted_char = _vim.eval('v:char')
+        try:
+            inserted_char = _vim.as_unicode(_vim.eval('v:char'))
+        except UnicodeDecodeError:
+            return
+
+        if sys.version_info >= (3, 0):
+            if isinstance(inserted_char, bytes):
+                return
+        else:
+            if not isinstance(inserted_char, unicode):
+                return
+
         try:
             if inserted_char == '':
                 before = _vim.buf.line_till_cursor
-                if before and before[-1] == self._last_inserted_char:
+
+                if before and before[-1] == self._last_change[0] or \
+                        self._last_change[1] != vim.current.window.cursor[0]:
                     self._try_expand(autotrigger_only=True)
         finally:
-            self._last_inserted_char = inserted_char
+            self._last_change = (inserted_char, vim.current.window.cursor[0])
 
         if self._should_reset_visual and self._visual_content.mode == '':
             self._visual_content.reset()
