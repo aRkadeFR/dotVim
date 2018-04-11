@@ -16,6 +16,10 @@ function! Title(character)
     execute 'substitute /./' . a:character . '/g'
 endfunction
 
+function! Elm(packageName)
+    execute ':lcd elm-stuff/packages/*/' . a:packageName . '/*'
+    execute ':e README.md'
+endfunction
 
 command! Lcd :lcd %:h
 command! FileExe :execute 'silent !chmod u+x %' | redraw!
@@ -28,6 +32,7 @@ command! Doc :execute ':e ~/CloudStation/Doc/index.rst | :Lcd'
 command! Blog :execute ':e ~/Projects/blog/source/index.rst | :Lcd'
 command! -nargs=1 GitCommit :call GitCommit('<args>')
 command! -nargs=1 Title :call Title('<args>')
+command! -nargs=1 Elm :call Elm('<args>')
 
 imap <leader>t <C-R>=strftime('%c')<ESC>
 imap <leader>d <C-R>=strftime('%d/%m/%Y')<ESC>

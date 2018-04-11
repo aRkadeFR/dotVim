@@ -4,3 +4,4 @@ spell*
 local.vim
 projects/*
 .netrwhist
+view/
