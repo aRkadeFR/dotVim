@@ -35,4 +35,4 @@ command! -nargs=1 Title :call Title('<args>')
 command! -nargs=1 Elm :call Elm('<args>')
 
 imap <leader>t <C-R>=strftime('%c')<ESC>
-imap <leader>d <C-R>=strftime('%d/%m/%Y')<ESC>
+imap <leader>d <C-R>=strftime('%Y-%m-%d')<ESC>
