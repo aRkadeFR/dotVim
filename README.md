@@ -16,4 +16,5 @@ git subtree pull --prefix pack/ultisnips/start/ultisnips https://github.com/SirV
 git subtree pull --prefix pack/syntax/start/haskellmode-vim git@github.com:lukerandall/haskellmode-vim.git master --squash
 git subtree pull --prefix pack/syntax/start/ghcmod-vim https://github.com/eagletmt/ghcmod-vim.git master --squash
 git subtree pull --prefix pack/syntax/start/neco-ghc https://github.com/eagletmt/neco-ghc.git master --squash
+git subtree pull --prefix pack/process/start/vimproc https://github.com/Shougo/vimproc.vim.git master --squash
 ```
