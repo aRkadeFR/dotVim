@@ -5,16 +5,6 @@ runtime! debian.vim
 " Add the ~/Projects path
 set  path+=~/Projects
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" File type specific
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Specific command for filetype
-filetype plugin indent on
-syntax on
-" help filetype
-
-" no fold on startup
-set foldlevelstart=99
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -38,25 +28,6 @@ set autoread 		"Set the autoread
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set history=500     " much more history than base
 set undolevels=1000 " much more undo
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Display :
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" loaded solarized theme
-set background=dark	" set the background dark
-set nonumber
-set showmatch 		" Show matching parenthesis
-set hlsearch		" Highligh search
-set incsearch		" Set Current Highlight as you type
-set scrolloff=20	" Don't show the search as the first line
-set ruler			" Show the line and column number
-set showcmd			" Show a line in the end of the terminal 
-set cmdheight=2		" Set the command bar height
-set wildmenu		" Set the wild menu
-set laststatus=2	" Show the last status/command
-set novisualbell    " Don't do beep
-set splitbelow
-set splitright
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -117,3 +88,28 @@ set pastetoggle=<F9>
 if findfile($HOME.'/.vim/local.vim')
 	execute 'source ' . $HOME . '/.vim/local.vim'
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display :
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldlevelstart=99
+set nonumber
+set showmatch 		" Show matching parenthesis
+set hlsearch		" Highligh search
+set incsearch		" Set Current Highlight as you type
+set scrolloff=20	" Don't show the search as the first line
+set ruler			" Show the line and column number
+set showcmd			" Show a line in the end of the terminal 
+set cmdheight=2		" Set the command bar height
+set wildmenu		" Set the wild menu
+set laststatus=2	" Show the last status/command
+set novisualbell    " Don't do beep
+set splitbelow
+set splitright
+
+syntax on                                                  
+set background=dark " dark | light "                       
+colorscheme solarized                                      
+filetype plugin indent on
+set background=dark	" set the background dark
