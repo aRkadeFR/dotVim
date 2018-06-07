@@ -6,6 +6,15 @@ snippet NoMonomorphismRestriction "Language Pragma NoMonomorphismRestriction" w
 {-# LANGUAGE NoMonomorphismRestriction #-}
 endsnippet
 
+snippet QuasiQuotes "Language Pragma QuasiQuotes" w
+{-# LANGUAGE QuasiQuotes #-}
+endsnippet
+
+snippet pragma "Language Pragma" w
+{-# LANGUAGE ${1:PragmaName} #-}
+${0}
+endsnippet
+
 snippet main "Main Function" w
 main = do
 	printStrLn "Main Function"
