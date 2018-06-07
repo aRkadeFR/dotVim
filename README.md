@@ -13,4 +13,6 @@ git subtree pull --prefix pack/syntax/start/tabular/ https://github.com/godlygee
 git subtree pull --prefix pack/syntax/start/vim-ansible-yaml/ https://github.com/pearofducks/ansible-vim.git master --squash
 git subtree pull --prefix pack/syntax/start/vim-markdown/ https://github.com/plasticboy/vim-markdown.git master --squash
 git subtree pull --prefix pack/ultisnips/start/ultisnips https://github.com/SirVer/ultisnips.git master --squash
+git subtree pull --prefix pack/syntax/start/syntastic https://github.com/vim-syntastic/syntastic.git master --squash
+git subtree pull --prefix pack/syntax/start/vim-hdevtools https://github.com/bitc/vim-hdevtools.git master --squash
 ```
