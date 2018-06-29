@@ -21,6 +21,11 @@ function! Elm(packageName)
     execute ':e README.md'
 endfunction
 
+function! Tabe(filepath)
+    execute ':tabe ' . a:filepath
+    execute ':Lcd'
+endfunction
+
 command! Lcd :lcd %:h
 command! FileExe :execute 'silent !chmod u+x %' | redraw!
 command! FileGzip :execute '!cat % | gzip | base64 -w0'
@@ -33,6 +38,7 @@ command! Blog :execute ':e ~/Projects/blog/source/index.rst | :Lcd'
 command! -nargs=1 GitCommit :call GitCommit('<args>')
 command! -nargs=1 Title :call Title('<args>')
 command! -nargs=1 Elm :call Elm('<args>')
+command! -nargs=1 -complete=file Tabe :call Tabe('<args>')
 
 imap <leader>t <C-R>=strftime('%c')<ESC>
 imap <leader>d <C-R>=strftime('%Y-%m-%d')<ESC>
