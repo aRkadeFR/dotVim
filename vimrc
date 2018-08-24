@@ -10,10 +10,7 @@ set  path+=~/Projects
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " tag part
 """""""""""""""""""""""""""""""""""""""""""""""""""
-set tags=.ctags
-set tags+=../.ctags
-set tags+=.git/ctags
-set tags+=../.git/ctags
+set tags=.tags
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance
