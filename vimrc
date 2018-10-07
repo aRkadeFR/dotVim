@@ -11,6 +11,7 @@ set  path+=~/Projects
 " tag part
 """""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=.tags
+set tags+=tags
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance

@@ -12,7 +12,7 @@ git subtree pull --prefix pack/syntax/start/pgsql.vim/ https://github.com/lifepi
 git subtree pull --prefix pack/syntax/start/tabular/ https://github.com/godlygeek/tabular.git master --squash
 git subtree pull --prefix pack/syntax/start/vim-ansible-yaml/ https://github.com/pearofducks/ansible-vim.git master --squash
 git subtree pull --prefix pack/syntax/start/vim-markdown/ https://github.com/plasticboy/vim-markdown.git master --squash
+git subtree pull --prefix pack/syntax/start/ale https://github.com/w0rp/ale.git master --squash
 git subtree pull --prefix pack/ultisnips/start/ultisnips https://github.com/SirVer/ultisnips.git master --squash
-git subtree pull --prefix pack/syntax/start/syntastic https://github.com/vim-syntastic/syntastic.git master --squash
-git subtree pull --prefix pack/syntax/start/vim-hdevtools https://github.com/bitc/vim-hdevtools.git master --squash
+git subtree pull --prefix pack/syntax/start/easy-align https://github.com/junegunn/vim-easy-align.git master --squash
 ```
