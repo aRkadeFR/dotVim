@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.html setfiletype htmldjango
+" autocmd BufRead,BufNewFile *.html setfiletype htmldjango
