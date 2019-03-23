@@ -3,7 +3,7 @@ snippet p "paragraph" w
 endsnippet
 
 snippet h1 "h1" w
-<h1>$0</h1>
+<h1 class="${1:klass}">$0</h1>
 endsnippet
 
 snippet h2 "h2" w
@@ -72,6 +72,22 @@ snippet div "div with class" b
 <div class="${1:klass}">
   ${0:#Inside}
 </div>
+endsnippet
+
+snippet label "label with class" b
+<label class="${1:label}">${0:#Inside}</label>
+endsnippet
+
+snippet figure "figure with class" b
+<figure class="${1:label}">
+  ${0:#Inside}
+</figure>
+endsnippet
+
+snippet section "section with class" b
+<section class="${1:section container}">
+  ${0:#Inside}
+</section>
 endsnippet
 
 snippet hr "hr" b

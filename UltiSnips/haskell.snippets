@@ -15,6 +15,14 @@ snippet pragma "Language Pragma" w
 ${0}
 endsnippet
 
+snippet log "Log Info" w
+$(logInfo) ("log: " <> (show ${0}) :: Text)
+endsnippet
+
+snippet put "PutStrLn" w
+putStrLn $ ("log: " <> (show ${0}) :: Text)
+endsnippet
+
 snippet main "Main Function" w
 main = do
 	printStrLn "Main Function"

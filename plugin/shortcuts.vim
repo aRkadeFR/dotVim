@@ -42,3 +42,5 @@ command! -nargs=1 -complete=file Tabe :call Tabe('<args>')
 
 imap <leader>t <C-R>=strftime('%c')<ESC>
 imap <leader>d <C-R>=strftime('%Y-%m-%d')<ESC>
+imap <leader>r <C-R>=strftime('%Y-%m-%dT%H:%M:02Z')<ESC>
+vnoremap <silent> <F1> :w !xsel -b<Enter> 

@@ -15,4 +15,5 @@ git subtree pull --prefix pack/syntax/start/vim-markdown/ https://github.com/pla
 git subtree pull --prefix pack/syntax/start/ale https://github.com/w0rp/ale.git master --squash
 git subtree pull --prefix pack/ultisnips/start/ultisnips https://github.com/SirVer/ultisnips.git master --squash
 git subtree pull --prefix pack/syntax/start/easy-align https://github.com/junegunn/vim-easy-align.git master --squash
+git subtree pull --prefix pack/syntax/start/vim-javascript https://github.com/pangloss/vim-javascript.git master --squash
 ```

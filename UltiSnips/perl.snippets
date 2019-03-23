@@ -1,0 +1,21 @@
+snippet perl "perl" b
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+# use Data::Dumper;
+
+sub main {
+        # Help
+        $0
+
+        print STDERR "Success\n";
+        exit 0;
+}
+
+&main();
+endsnippet
+
+snippet fqdn "fqdn" b
+chomp(my $FQDN = \`hostname -f\`);
+endsnippet
