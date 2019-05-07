@@ -108,6 +108,7 @@ set splitright
 
 syntax on                                                  
 set background=dark " dark | light "                       
+" let g:solarized_termcolors=256
 colorscheme solarized                                      
 filetype plugin indent on
 set background=dark	" set the background dark

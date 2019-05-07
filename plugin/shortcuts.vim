@@ -33,7 +33,7 @@ command! Bash :execute 'e ~/.bashrc'
 command! GitVimPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
 command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
 command! GitPush :execute '!git push'
-command! Doc :execute ':e ~/CloudStation/Doc/index.rst | :Lcd'
+command! Doc :execute ':e ~/Nextcloud/Doc/index.rst | :Lcd'
 command! Blog :execute ':e ~/Projects/blog/source/index.rst | :Lcd'
 command! -nargs=1 GitCommit :call GitCommit('<args>')
 command! -nargs=1 Title :call Title('<args>')

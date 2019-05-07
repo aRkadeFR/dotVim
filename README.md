@@ -2,6 +2,8 @@
 
 ## Update subtree for vim packages plugins
 
+git subtree pull --prefix pack/colors/start/solarized/ https://github.com/altercation/vim-colors-solarized.git master --squash
+
 All subtrees:
 ```
 git subtree pull --prefix pack/colors/start/solarized/ https://github.com/altercation/vim-colors-solarized.git master --squash
