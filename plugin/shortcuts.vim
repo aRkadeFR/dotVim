@@ -30,11 +30,13 @@ command! Lcd :lcd %:h
 command! FileExe :execute 'silent !chmod u+x %' | redraw!
 command! FileGzip :execute '!cat % | gzip | base64 -w0'
 command! Bash :execute 'e ~/.bashrc'
+command! Changelog :execute 'e ~/Projects/infra/CHANGELOG.md'
 command! GitVimPush :execute '!(cd ~/.vim ; git add . ; git commit -a -v -m "' . strftime("%D") . ' update vim git" ; git push)'
 command! GitVimPull :execute '!(cd ~/.vim ; git fetch ; git status)'
 command! GitPush :execute '!git push'
 command! Doc :execute ':e ~/Nextcloud/Doc/index.rst | :Lcd'
 command! Blog :execute ':e ~/Projects/blog/source/index.rst | :Lcd'
+command! Localchef :execute ':tabe ~/Projects/localchef/src/Server.hs | :lcd ~/Projects/localchef/src/ | :tabe ~/Projects/localchef/nappage/src/HomePage.js | :lcd ~/Projects/localchef/nappage/src/ '
 command! -nargs=1 GitCommit :call GitCommit('<args>')
 command! -nargs=1 Title :call Title('<args>')
 command! -nargs=1 Elm :call Elm('<args>')
