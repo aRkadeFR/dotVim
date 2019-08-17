@@ -1,5 +1,11 @@
 # Personal vim files
 
+## Add a subtree
+
+```
+git subtree add --prefix pack/syntax/start/vim-jsx git@github.com:mxw/vim-jsx.git master
+```
+
 ## Update subtree for vim packages plugins
 
 All subtrees:
